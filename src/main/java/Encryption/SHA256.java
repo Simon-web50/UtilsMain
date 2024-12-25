@@ -1,6 +1,7 @@
 package Encryption;
 
 import java.security.MessageDigest;
+import java.util.Scanner;
 
 /**
  * SHA系列算法是一组密码散列函数,用于将任意长度的数据映射为固定长度的散列值.
@@ -26,7 +27,10 @@ public class SHA256 {
     }
 
     public static void main(String[] args) throws Exception {
-        String data = "Hello World!";
+//        String data = "Hello World!";
+        Scanner input = new Scanner(System.in);
+        System.out.print("请输入要加密的数据:");
+        String data = input.nextLine();
         String encryptedData = encrypt(data);
         System.out.println("加密后的数据:" + encryptedData);
     }

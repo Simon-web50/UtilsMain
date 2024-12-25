@@ -56,11 +56,29 @@
       <artifactId>slf4j-api</artifactId>
       <version>1.7.30</version>
     </dependency>
+      <!-- Oracle 12c JDBC driver -->
+      <dependency>
+        <groupId>com.oracle.database.jdbc</groupId>
+        <artifactId>ojdbc8</artifactId>
+        <version>19.3.0.0</version>
+      </dependency>
+      <!-- 添加 SQL Server 驱动 -->
+      <dependency>
+        <groupId>com.microsoft.sqlserver</groupId>
+        <artifactId>mssql-jdbc</artifactId>
+        <version>8.4.1.jre8</version>
+      </dependency>
     <!-- SLF4J binding for Logback -->
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
       <version>1.2.3</version>
+    </dependency>
+    <!-- 文件从一个服务器下载后上传至另一个服务器 -->
+    <dependency>
+      <groupId>com.jcraft</groupId>
+      <artifactId>jsch</artifactId>
+      <version>0.1.55</version>
     </dependency>
       <dependency>
           <groupId>redis.clients</groupId>

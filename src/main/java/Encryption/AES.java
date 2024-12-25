@@ -5,6 +5,7 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
+import java.util.Scanner;
 
 /**
  * AES即高级加密标准,是一种对称加密算法.
@@ -66,8 +67,10 @@ public class AES {
     }
 
     public static void main(String[] args) throws Exception {
-        String data = "Hello World";
-
+//        String data = "Hello World";
+        Scanner input = new Scanner(System.in);
+        System.out.print("请输入需要加密的数据:");
+        String data = input.nextLine();
         String encryptedData = encrypt(data);
         System.out.println("加密后的数据：" + encryptedData);
 

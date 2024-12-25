@@ -2,6 +2,7 @@ package Encryption;
 
 import java.security.MessageDigest;
 import java.util.Formatter;
+import java.util.Scanner;
 
 /**
  * MD5是"信息摘要算法",它对任意长度的数据,算出固定长度的散列值(hash value).
@@ -28,7 +29,10 @@ public class MD5 {
     }
 
     public static void main(String[] args) throws Exception {
-        String data = "Hello World";
+//        String data = "Hello World";
+        Scanner input = new Scanner(System.in);
+        System.out.print("请输入需要加密的数据:");
+        String data = input.nextLine();
         String encryptedData = eccrypt(data);
         System.out.println("加密后的数据:" + encryptedData);
     }

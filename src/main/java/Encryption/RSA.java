@@ -4,6 +4,7 @@ import javax.crypto.Cipher;
 import java.nio.charset.StandardCharsets;
 import java.security.*;
 import java.util.Base64;
+import java.util.Scanner;
 
 /**
  * RSA算法是是目前应用最广泛的非对称加密算法。
@@ -56,8 +57,10 @@ public class RSA {
         PublicKey publicKey = keyPair.getPublic();
         PrivateKey privateKey = keyPair.getPrivate();
 
-        String data = "Hello World";
-
+//        String data = "Hello World";
+        Scanner input = new Scanner(System.in);
+        System.out.print("请输入要加密的数据:");
+        String data = input.nextLine();
         String encryptedData = encrypt(data, publicKey);
         System.out.println("加密后的数据：" + encryptedData);
 

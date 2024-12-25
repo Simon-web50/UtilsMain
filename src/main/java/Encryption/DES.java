@@ -6,6 +6,7 @@ import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 import java.security.spec.KeySpec;
 import java.util.Base64;
+import java.util.Scanner;
 
 /**
  * DES是一种对称机密算法,DES使用56位秘钥对数据进行加密,加密过程中使用了置换、替换、异或等运算,就有较高的安全性.
@@ -67,8 +68,11 @@ public class DES {
     }
 
     public static void main(String[] args) throws Exception {
-        String data = "Hello World";
-        String key = "12345678";
+//        String data = "Hello World";
+        Scanner input = new Scanner(System.in);
+        System.out.print("请输入要加密的数据:");
+        String data = input.nextLine();
+        String key = "06091234";
 
         String encryptedData = encrypt(data, key);
         System.out.println("加密后的数据：" + encryptedData);

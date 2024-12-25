@@ -7,9 +7,9 @@ public class Demo1 {
     public static void main(String[] args) {
         // 准备阶段
         Scanner input  = new Scanner(System.in);
-        System.out.println("请输入4位的年份: ");
+        System.out.print("请输入4位的年份: ");
         int year = input.nextInt();
-        System.out.println("请输入月份: ");
+        System.out.print("请输入月份: ");
         int month = input.nextInt();
         System.out.println(year + "年" + month + "月\t\t\t\t\t<  >");
         // 根据输入的月份获得该月份对应的天数
