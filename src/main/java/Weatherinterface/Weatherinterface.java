@@ -15,9 +15,9 @@ public class Weatherinterface {
                 String regex = "\\p{Punct}+";
                 String digit[] = str.split(regex);
                 System.out.println('\n'+"城市:"+digit[22]+digit[18]);
-                System.out.println('\n'+"时间:"+digit[50]+"年"+digit[51]+"月"+digit[52]+"日"+digit[54]);
+                System.out.println('\n'+"时间:"+digit[51]+"年"+digit[52]+"月"+digit[53]+"日"+digit[55]);
                 System.out.println('\n'+"温度:"+digit[48]+"~"+digit[46]);
-                System.out.println('\n'+"天气:"+digit[68]+" "+digit[64]+digit[66]);
+                System.out.println('\n'+"天气:"+digit[69]+" "+digit[65]+digit[67]);
                 System.out.println('\n'+digit[70]);
             }
             br.close();
